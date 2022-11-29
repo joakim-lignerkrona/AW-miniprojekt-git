@@ -1,0 +1,20 @@
+index
+    feed
+        upvote
+        downvote
+    post: 
+        vote: 1/-1
+
+skapa tips
+    form
+        "/api/newpost
+    content: 
+        -ämne
+        -beskrivning
+        -taggar
+        -youtube länk
+
+post sida
+    stor videospelare
+    get "/api/getpost/:id"
+
