@@ -1,0 +1,17 @@
+html {
+    display: flex;
+    flex-direction: column;
+  }
+  
+h1 {
+    color:blue; 
+    font-size: 12px;
+
+}
+.alert{
+    color:brown;
+    
+}
+li{
+
+}
