@@ -25,13 +25,13 @@ app.listen(3000, () => {
 });
 app.use(express.json());
 app.use(express.urlencoded());
+app.use('/assets',express.static(path.join(__frontend, '/assets')));
 
 app.post('/api/newpost', (req, res) => {
     console.log(req.body);
     let post = req.body;
     post.id = uuid();
     post.votes = [{id: "first", vote: 0}];
-    res.json(post);
     posts.push(post);
     writePosts();
     res.redirect('/');
