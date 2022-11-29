@@ -50,6 +50,9 @@ app.get('/create', (req, res) => {
 app.get('/post/:id', (req, res) => {
     res.sendFile(path.join(__frontend, 'vote.html'));
 })
+app.get('/api/posts', (req, res) => {
+    res.json(posts);
+})
 
 
 function writePosts() {
