@@ -53,6 +53,11 @@ app.get('/post/:id', (req, res) => {
 app.get('/api/posts', (req, res) => {
     res.json(posts);
 })
+app.get('/api/posts/:id', (req, res) => {
+    let id = req.params.id;
+    let post = posts.find(post => post.id === id);
+    res.json(post);
+})
 
 
 function writePosts() {
