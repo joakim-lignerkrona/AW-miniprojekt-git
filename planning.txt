@@ -1,4 +1,6 @@
 index
+    1. skapa upp en struktur med template data
+    2. varje post ska ha en rubrik, kort förklaring och knappar för upp/ned röstning
     feed
         upvote
         downvote
@@ -6,6 +8,8 @@ index
         vote: 1/-1
 
 skapa tips
+    1. skapa ett fromulär med fälten från content
+    2. lägg till action till form adressen
     form
         "/api/newpost"
     content: 
@@ -15,6 +19,11 @@ skapa tips
         -youtube länk
 
 post sida
+    1. skapa upp strukturen för en post
+        a. rubrik
+        b. videospelare från youtube
+        c. textbeskrivning
+    2. skapa en js fil som fetchar data från "/api/getpost/:id"
     stor videospelare
     get "/api/getpost/:id"
 
