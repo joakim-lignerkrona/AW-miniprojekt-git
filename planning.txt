@@ -7,7 +7,7 @@ index
 
 skapa tips
     form
-        "/api/newpost
+        "/api/newpost"
     content: 
         -ämne
         -beskrivning
