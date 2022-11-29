@@ -10,3 +10,7 @@ app.post('/api/newpost', (req, res) => {
     console.log(req.body);
     res.send('POST request to the homepage');
 })
+app.post('/api/vote/:id', (req, res) => {
+    console.log(req.body);
+    res.send('POST request to the homepage');
+})
