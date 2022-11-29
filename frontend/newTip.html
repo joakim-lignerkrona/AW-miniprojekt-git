@@ -9,37 +9,33 @@
   <body>
     <h1>Skapa nya tips</h1>
 
-    <div>
-      <form>
-        <label for="text">Användarnamn</label>
-        <input type="text" name="username">
-        <label for="text">Lösenord</label>
-        <input type="password" name="password">
-        <input type="submit" name="submit">
-      </form>
-    </div>
-
-    <br>
-
-    <div class="newpost-form-container">
-      <form action="/api/newpost" method="POST">
-        <label for="title">Ämne</label>
-        <input type="text" name="title" id="title" />
-        <label for="description">Beskrivning</label>
-        <input type="text" name="description" id="description" />
-        <label for="category">Taggar</label>
-        <input type="text" name="category" id="category" />
-        <label for="image">Länk</label>
-        <input type="text" name="image" id="image" />
-        <button type="submit">New Post</button>
-      </div>
-
-
+    <!-- Skriv in en användar namn-->
+    <form action="/author" method="POST">
+      <label for="author">Användarnamn</label>
+      <input type="text" name="author" id="author" />
       <br>
-      <iframe width="420" height="420"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-      </iframe>
 
 
-    </body>
-  </html>
+
+      <br> <!-- line delning-->
+
+
+      <!--En Form / Label med olika titlar -->
+      <div class="newpost-form-container">
+        <form action="/api/newpost" method="POST">
+          <label for="title">Ämne</label>
+          <input type="text" name="title" id="title" />
+          <label for="description">Beskrivning</label>
+          <input type="text" name="description" id="description" />
+          <label for="category">Taggar</label>
+          <input type="text" name="category" id="category" />
+          <label for="image">Länk</label>
+          <input type="text" name="image" id="image" />
+          <button type="submit">New Post</button>
+        </div>
+
+
+
+
+      </body>
+    </html>
