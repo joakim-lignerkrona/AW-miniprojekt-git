@@ -36,7 +36,7 @@ app.post('/api/newpost', (req, res) => {
     writePosts();
     res.redirect('/');
 })
-app.use('/api/vote/:id', (req, res) => {
+app.post('/api/vote/:id', (req, res) => {
     console.log(req.body);
     let id = req.params.id;
     res.send(`POST request to the homepage with id ${id}`);
